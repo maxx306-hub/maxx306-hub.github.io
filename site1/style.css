@@ -315,6 +315,9 @@ color: #FFFFFF;
       padding-right: 8px;
       max-width: 632px;
     }
+  .b{
+    padding-left:15px;
+  }
 }
 .arrowup{
   width: 80px;
