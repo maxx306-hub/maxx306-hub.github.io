@@ -1,0 +1,76 @@
+.future__game {
+  padding-top: 107px;
+  background: #EAE1EF;
+
+  .content {
+    .future__game__title {
+      display: flex;
+      justify-content: space-between;
+
+      .future__game__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 56px;
+        color: #000000;
+      }
+
+      .future__game__top__panel {
+        display: flex;
+        text-align: center;
+
+        .future__game__top__button {
+          img {
+            padding: 0;
+            margin: 0;
+            padding-top: 5px;
+            padding-right: 5px;
+          }
+
+          &:nth-child(2) {
+            transform: scale(-1, -1);
+          }
+          cursor: pointer;
+          margin-left: 10px;
+          width: 43px;
+          height: 43px;
+          border-radius: 50%;
+          background: #FFFFFF;
+        }
+      }
+    }
+
+    .future__game__list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 55px;
+      flex-wrap: wrap;
+      .game__item {
+        .game__img {
+          width: 520px;
+          min-height: 660px;
+          background-position: center;
+          background-size: 100% 100%;
+        }
+
+        .date__release {
+          width: 100%;
+          border-top: 1px solid #052859;
+          margin-top: 48px;
+          margin-bottom: 90px;
+          .date__release__text {
+            padding-top: 18px;
+            text-align: left;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 42px;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.content{
+  margin-left: 62px;
+  margin-right: 90px;
+  max-width: 1770px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header {
+  z-index: 2;
+  min-height: 132px;
+  width: 100%;
+  background: #4CECEC;
+  display: flex;
+  position: fixed;
+
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__left {
+      display: flex;
+      text-align: center;
+    .header__logo{filter: drop-shadow(0px 4px 20px #F80808);}
+      .header__title {
+        .title {
+          font-family: Montserrat;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 59px;
+          letter-spacing: 0;
+          margin: 0;
+          padding: 0;
+        text-shadow:(0px 4px 20px #F80808);
+        }
+
+        .under__title {
+          margin: 0;
+          padding: 0;
+          font-family: Roboto;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0;
+          margin-top: -10px;
+          text-shadow:(0px 4px 20px #F80808);
+        }
+      }
+    }
+
+    .header__navbar {
+      display: flex;
+      max-width: 1310px;
+      width: 100%;
+      justify-content: space-between;
+      .header__navitem {
+
+
+        &:nth-child(1) {
+          margin-left: 38px;
+        }
+
+        &:nth-child(5) {
+
+        }
+
+        .header__nav__a {
+          @include nav__item;
+        }
+
+        .catalog {
+          display: flex;
+          align-items: center;
+        }
+
+        .catalog::after {
+          content: "▼";
+          font-size: 12px;
+          padding-top: 5px;
+        }
+      }
+
+      .header__find {
+        display: flex;
+
+        .header__nav__a {
+          margin-left: 16px;
+        }
+
+        .header__find__input {
+          display: none;
+          border: 0;
+          margin-left: 2px;
+          border-bottom: 3px solid #DB1414;
+          outline: 0;
+
+          font-size: 1.2rem;
+          font-weight: 500;
+          font-family: sans-serif;
+          color: rgb(0, 0, 0);
+          background: transparent;
+          overflow: hidden;
+        }
+
+        &:hover .header__nav__a {
+          display: none;
+        }
+
+        &:hover .header__find__input {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.header__shop{display: none;
+width: 41px;
+height: 41px;}
+.header__burger{display: none;
+}
+.burger__menu {
+  display: none;
+
+}
+.ddd4{
+  position:absolute;
+  left: 110px;
+  display: flex;
+  align-items: center;
+  top:25px;
+  justify-content: space-around;
+  height: 83px;
+  width: 762px;
+
+  background: #4CECEC;
+  .burger__item__text{
+    @include nav__item;
+    font-size: 1.9em;
+    font-weight: 500;
+
+  }
+}

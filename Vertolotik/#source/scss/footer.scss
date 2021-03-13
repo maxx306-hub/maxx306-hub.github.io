@@ -1,0 +1,29 @@
+.footer {
+  background: #C4C4C4;
+
+  .content {
+    width: 100%;
+
+    .footer__title {
+      width: 50%;
+      padding-top: 60px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+      line-height: 42px;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+    .footer__text{
+      width: 50%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      padding-bottom: 65px;
+      color: #000000;
+    }
+  }
+}

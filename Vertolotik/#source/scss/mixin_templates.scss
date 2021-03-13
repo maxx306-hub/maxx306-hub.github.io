@@ -1,0 +1,56 @@
+@mixin nav__item{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 42px;
+  color: #000000;
+  text-decoration: none;
+}
+@mixin left__side_items{
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  margin-right: 90px;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+}
+@mixin game__name {
+  font-family: Saira;
+font-size:32px;
+font-style: normal;
+font-weight: 500;
+line-height: 38px;
+opacity: 0.85;
+text-decoration: none;
+color: black;
+}
+@mixin game__genre {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+@mixin game__price{font-family: Saira;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 57px;
+color: #000000;
+
+}
+@mixin categories__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}

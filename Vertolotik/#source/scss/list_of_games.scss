@@ -1,0 +1,287 @@
+.list_of_games {
+  background: #DAD8DB;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: 30px;
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .left__side {
+      max-width: 960px;
+      width: 100%;
+
+      .left__side__top {
+        display: flex;
+        margin-top: 35px;
+        padding-bottom: 25px;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+
+        .left__side_item {
+          @include left__side_items;
+
+          &:nth-child(1) {
+            text-shadow: 0 4px 15px #4CECEC;
+          }
+
+          &:nth-child(2) {
+            text-shadow: 0 4px 15px #890909;
+          }
+
+          &:nth-child(3) {
+            text-shadow: 0 4px 15px #186FDE;
+          }
+        }
+      }
+
+      .left__side_list {
+        margin-top: 21px;
+        width: 100%;
+
+        .hidden__games {
+          display: none;
+        }
+
+        .ddd {
+          display: block;
+        }
+
+        .game__item {
+          align-items: center;
+          max-width: 960px;
+          min-height: 176px;
+          width: 100%;
+          margin-bottom: 12px;
+          background: #ffffff;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          display: flex;
+
+          .game__item_left {
+            display: flex;
+
+            .game__info {
+              margin-left: 1.5em;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .game__name {
+                @include game__name;
+              }
+
+              .game__info__bottom {
+                display: flex;
+
+                .game__genres {
+                  margin-left: 23px;
+                  padding-top: 13px;
+                  display: flex;
+
+                  .game__genre {
+                    @include game__genre;
+                  }
+                }
+              }
+            }
+
+            .game__img {
+              width: 15em;
+              min-height: 145px;
+              background-position: center;
+              background-size: 100% 100%;
+              margin-left: 1.9em;
+            }
+          }
+
+          .game__item_right {
+            margin-left: auto;
+
+            .game__price__block {
+              margin-right: 4px;
+              display: flex;
+              align-items: center;
+              @include game__price;
+
+              .currency {
+                height: 23px;
+              }
+            }
+          }
+        }
+
+        .show__more {
+          font-family: Saira;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 38px;
+          text-align: center;
+          cursor: pointer;
+
+          &:after {
+            content: "▼";
+            font-size: 15px;
+          }
+        }
+
+        .activee:after {
+          content: "▲";
+          font-size: 15px;
+        }
+      }
+    }
+
+    .right__side {
+      .game__item {
+        .game__img {
+          width: 225px;
+          height: 120px;
+          margin-left: 23px;
+          background-size: 100%;
+        }
+        align-items: center;
+        max-width: 755px;
+        min-height: 135px;
+        width: 100%;
+        margin-bottom: 12px;
+        background: #ffffff;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: flex;
+
+        .game__name {
+          @include game__name;
+          margin-left: 18px;
+        }
+
+        .item__right__side {
+          display: flex;
+          flex-direction: column;
+          margin-left: auto;
+          margin-right: 20px;
+
+          .game__price__block {
+            display: flex;
+            font-family: Saira;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 38px;
+            align-items: center;
+            justify-content: flex-end;
+
+            .currency {
+              height: 18px;
+            }
+          }
+
+          .game_discount {
+            width: 67px;
+            height: 27px;
+            background: #07520A;
+            font-family: Saira;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 38px;
+            color: #FFFFFF;
+          }
+        }
+      }
+      max-width: 755px;
+      width: 100%;
+
+      .right__side__top {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+
+        .right__side__top__title {
+          font-family: Roboto;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 42px;
+          letter-spacing: 0;
+          text-align: left;
+        }
+
+        .right__side__top__panel {
+          display: flex;
+
+          .right__side__top__button {
+            text-align: center;
+
+            img {
+              padding: 0;
+              margin: 0;
+              padding-top: 5px;
+              padding-right: 5px;
+            }
+
+            &:nth-child(2) {
+              transform: scale(-1, -1);
+            }
+            cursor: pointer;
+            margin-left: 10px;
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            background: #FFFFFF;
+          }
+        }
+      }
+
+      .right__game__list {
+        margin-top: 42px;
+
+        .hidden__games2 {
+          display: none;
+        }
+
+        .ddd2 {
+          display: block;
+        }
+
+        .show__more2 {
+          font-family: Saira;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 38px;
+          text-align: center;
+          cursor: pointer;
+          font-weight: 400;
+          color: black;
+
+          &:after {
+            content: "▼";
+            font-size: 13px;
+          }
+        }
+
+        .activee2:after {
+          content: "▲";
+          font-size: 13px;
+        }
+
+
+
+
+
+      }
+      .right__side__last {
+        .last__title {
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 57px;
+            color: #000000;
+
+        }
+      }
+    }
+  }
+}
