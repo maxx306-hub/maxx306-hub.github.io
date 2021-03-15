@@ -1,0 +1,66 @@
+@media screen and (max-device-width: 414px) {
+  .header__navbar {
+    display: none!important;
+  }
+  .header{
+    min-height: 130px;
+  }
+.header__content{
+  justify-content: center!important;
+}
+  .content {
+    justify-content: center;
+  }
+  .list__left__side{
+    .list__title{
+      display: none;
+    }
+  }
+  .list__right__side {
+    margin-top: 30px!important;
+    flex-direction: row!important;
+    flex-wrap: wrap;
+    max-width: 900px!important;
+    .list__title2{
+display:block!important;
+width: 100%;
+text-align: center;
+margin-bottom: 30px;
+    }
+    .list__right__side__price {
+      max-width: 420px;
+      margin-right: 20px;
+    }
+
+    .list__right__side__genres {
+      max-width: 420px;
+      margin-right: 20px;
+    }
+
+    .list__right__side__tags {
+      max-width: 420px;
+      margin-right: 20px;
+      height: 200px!important;
+    }
+
+    .list__right__side__gamemode {
+      max-width: 420px;
+      width: 100%;
+
+      height: 260px!important;
+      .gamemodes{
+        font-size: 25px;
+        margin-left: -15px;
+      }
+      .filter__title {
+
+        margin-bottom: 40px!important;
+      }
+    }
+
+    .list__right__side__date {
+      max-width: 860px;
+      width: 100%;
+    }
+  }
+}

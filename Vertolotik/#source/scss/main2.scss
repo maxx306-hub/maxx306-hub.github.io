@@ -1,7 +1,7 @@
 @import "fonts.scss";
 @import "mixin_templates.scss";
 @import "header.scss";
-
+@import "media__screens2";
 .list {
   padding-top: 132px;
 
@@ -11,7 +11,7 @@
     flex-wrap: wrap-reverse;
 
     .list__title {
-      padding-top: 32px;
+
 
       .list__title__text {
         font-family: Roboto;
@@ -23,165 +23,217 @@
       }
     }
 
-    .list__left__side{
-
+    .list__left__side {
       max-width: 960px;
       width: 100%;
-     .list__top__panel{
-       margin-top: 45px;
-      width: 100%;
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-      font-family: Roboto;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 21px;
-      margin-bottom: 14px;
 
-      .sorting{
-        display: flex;
-        align-items: center;
-        .sorted__by{
-          margin-right: 22px;
-        }
-        .kind__of__sorting{
-
-          height: 35px;
-          border: none;
-          &:focus{
-            overflow: hidden;
-            outline: none;
-          }
-        }
-      }
-      .last__items{
-
-        display: flex;
-        .last__item{
-          cursor: pointer;
-          &:first-child{
-            margin-right: 25px;
-            color: #D02B2B;
-          }
-          color: #4C11F2;
-        }
-      }
-    }
-  }
-
-  .list__right__side{
-     margin-top: 168px;
-    max-width: 500px;
-    width: 100%;
-    margin-left: 20px;
-    .list__right__side__price{
-      width: 100%;
-      min-height: 200px;
-      background: #C2C8CD;
-      margin-bottom: 12px;
-      .price__selectors{
-        display: flex;
+      .list__top__panel {
+        margin-top: 45px;
+        width: 100%;
         justify-content: space-between;
-        margin-top: 40px;
+        align-items: center;
+        display: flex;
         font-family: Roboto;
         font-size: 18px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        margin-bottom: 14px;
 
-
-        .right__side__select{
-          border: 2px solid black;
-          width: 230px;
-          height: 30px;
-          margin: 0 15px;
-          background: transparent;
-          overflow: hidden ;
-
-        }
-      }
-
-
-    }
-    .list__right__side__genres{
-      width: 100%;
-      min-height: 150px;
-      background: #C2C8CD;
-        margin-bottom: 12px;
-        .checkboxs{
+        .sorting {
           display: flex;
-          justify-content: space-around;
-          flex-wrap: wrap;
-          margin-top: 15px;
-          .genre__checkbox{
+          align-items: center;
 
-            width: 35%;
-            display: flex;
-            position: relative;
-            margin-bottom: 15px;
-            .checkbox{
-                cursor: pointer;
-              color:rgb(33, 32, 34);
-              position: absolute;
-              width: 15px;
-              height: 15px;
-              border: 2px solid rgba(118, 101, 101, 0.58);
-            }
-            .checkbox__text{
-              margin-left: 25px;
-              font-family: Roboto;
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 16px;
+          .sorted__by {
+            margin-right: 22px;
+          }
 
+          .kind__of__sorting {
+            height: 35px;
+            border: none;
+
+            &:focus {
+              overflow: hidden;
+              outline: none;
             }
           }
         }
-    }
-    .list__right__side__tags{
-      width: 100%;
-      min-height: 260px;
-      background: #C2C8CD;
-        margin-bottom: 12px;
-      form{
-        display: flex;
-                  position: relative;
-      }
-        .tags__find{
 
-          border: 2px solid black;
-        width: 93%;
-          height: 27px;
-          background: transparent;
-          overflow: hidden ;
-          margin: 0 15px;
-          margin-top: 20px;
+        .last__items {
+          display: flex;
+
+          .last__item {
+            cursor: pointer;
+
+            &:first-child {
+              margin-right: 25px;
+              color: #D02B2B;
+            }
+            color: #4C11F2;
+          }
+        }
+      }
+    }
+
+    .list__right__side {
+      margin-top: 168px;
+      max-width: 500px;
+      width: 100%;
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      .list__title2{
+        display: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+      }
+      .right__side__select {
+        border: 2px solid black;
+        width: 230px;
+        height: 30px;
+        margin: 0 15px;
+        background: transparent;
+        overflow: hidden;
+      }
+      .list__right__side__price {
+        width: 100%;
+        min-height: 200px;
+        background: #C2C8CD;
+        margin-bottom: 12px;
+
+        .price__selectors {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 40px;
           font-family: Roboto;
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
           line-height: 16px;
 
-        }
-      .find__img{
-        position: absolute;
-        margin-top: 24px;
-        right: 27px;
-      }
-    }
-    .list__right__side__gamemode{
-        margin-bottom: 12px;
-        width: 100%;
-        min-height: 230px;
-        background: #C2C8CD;
-    }
 
-  }
+        }
+      }
+
+      .list__right__side__genres {
+        width: 100%;
+        min-height: 150px;
+        background: #C2C8CD;
+        margin-bottom: 12px;
+
+        .checkboxs {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          margin-top: 15px;
+        }
+      }
+
+      .list__right__side__tags {
+        width: 100%;
+        min-height: 260px;
+        background: #C2C8CD;
+        margin-bottom: 12px;
+
+        form {
+          display: flex;
+          position: relative;
+        }
+
+        .genre__checkbox {
+          padding-left: 60px;
+        }
+
+        .tags__find {
+          border: 2px solid black;
+          width: 93%;
+          height: 27px;
+          background: transparent;
+          overflow: hidden;
+          margin: 20px 0 20px 15px;
+          font-family: Roboto;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+        }
+
+        .find__img {
+          position: absolute;
+          margin-top: 24px;
+          right: 27px;
+        }
+      }
+
+      .list__right__side__gamemode {
+        margin-bottom: 12px;
+        height: 150px;
+        background: #C2C8CD;
+        display: flex;
+        flex-direction: column;
+        .filter__title {
+          margin-bottom: 8px;
+        }
+
+      }
+      .list__right__side__date{
+        height: 150px;
+        background: #C2C8CD;
+        .date__inputs{
+          display: flex;
+          justify-content: space-around;
+          margin-top: 20px;
+          .right__side__select{
+            max-width: 150px;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+
+
+          }
+        }
+      }
+
+    }
   }
 }
+
+.genre__checkbox {
+  width: 35%;
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+
+  .checkbox {
+    cursor: pointer;
+    color: rgb(33, 32, 34);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(118, 101, 101, 0.58);
+  }
+
+  .checkbox__text {
+    margin-left: 25px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+.gamemode {
+  padding-left: 60px;
+  margin-bottom: 10px;
+}
+
 .game__item {
   align-items: center;
   max-width: 960px;
@@ -196,8 +248,7 @@
     display: flex;
 
     .game__info {
-      margin: 10px 0;
-      margin-left: 1.3em;
+      margin: 10px 0 10px 1.3em;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -210,9 +261,10 @@
       .game__info__bottom {
         display: flex;
 
-        .game__platform{
+        .game__platform {
           transform: scale(0.7);
         }
+
         .game__genres {
           margin-left: 5px;
           padding-top: 9px;
@@ -220,8 +272,8 @@
 
           .game__genre {
             @include game__genre;
-              font-size: 1.2em;
-              padding-right: 3px;
+            font-size: 1.2em;
+            padding-right: 3px;
           }
         }
       }
@@ -232,20 +284,19 @@
       min-height: 85px;
       background-position: center;
       background-size: 100% 100%;
-      margin: 10px 0;
-        margin-left: 1.5em;
-
+      margin: 10px 0 10px 1.5em;
     }
   }
 
   .game__item_right {
     margin-left: auto;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  max-width: 190px;
-  width: 100%;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 190px;
+    width: 100%;
+    justify-content: space-between;
+
     .game__price__block {
       margin-right: 4px;
       display: flex;
@@ -257,8 +308,8 @@
       }
     }
   }
-  .game_discount {
 
+  .game_discount {
     width: 67px;
     height: 27px;
     background: #07520A;
@@ -273,9 +324,11 @@
     justify-content: center;
   }
 }
+
 .hidden__games4 {
   display: none;
 }
+
 .show__more4 {
   font-family: Saira;
   font-style: normal;
@@ -295,12 +348,23 @@
   content: "▲";
   font-size: 15px;
 }
+
 .ddd4 {
   display: block;
 }
-.filter__title{
+
+.filter__title {
   @include filter__title;
   text-align: center;
+}
+
+.gamemode__name {
+  margin-left: 10px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 body {
@@ -309,5 +373,5 @@ body {
 
 * {
   padding: 0;
-  margin: 0
+  margin: 0;
 }

@@ -93,3 +93,43 @@ checkbox8.addEventListener("click", (e) =>{
       checkbox8.innerText = "✔";
     }
 })
+const checkbox9 = document.querySelector('.checkbox9');
+
+checkbox9.addEventListener("click", (e) =>{
+    checkbox9.classList.toggle("checked9");
+    if(checkbox9.innerText === "✔"){
+      checkbox9.innerText = " ";
+    }else {
+      checkbox9.innerText = "✔";
+    }
+})
+const checkbox10 = document.querySelector('.checkbox10');
+
+checkbox10.addEventListener("click", (e) =>{
+    checkbox10.classList.toggle("checked10");
+    if(checkbox10.innerText === "✔"){
+      checkbox10.innerText = " ";
+    }else {
+      checkbox10.innerText = "✔";
+    }
+})
+const checkbox11 = document.querySelector('.checkbox11');
+
+checkbox11.addEventListener("click", (e) =>{
+    checkbox11.classList.toggle("checked11");
+    if(checkbox11.innerText === "✔"){
+      checkbox11.innerText = " ";
+    }else {
+      checkbox11.innerText = "✔";
+    }
+})
+const checkbox12 = document.querySelector('.checkbox12');
+
+checkbox12.addEventListener("click", (e) =>{
+    checkbox12.classList.toggle("checked12");
+    if(checkbox12.innerText === "✔"){
+      checkbox12.innerText = " ";
+    }else {
+      checkbox12.innerText = "✔";
+    }
+})
