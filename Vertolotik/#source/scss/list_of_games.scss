@@ -4,12 +4,11 @@
   padding-bottom: 30px;
   .content {
     display: flex;
-
+    flex-wrap: wrap;
     justify-content: space-between;
     .left__side {
-      max-width: 900px;
+      max-width: 950px;
       width: 100%;
-      margin-right: 35px;
       .left__side__top {
         display: flex;
         margin-top: 35px;
