@@ -43,10 +43,14 @@
 
     .future__game__list {
       display: flex;
-      justify-content: space-between;
       margin-top: 55px;
       flex-wrap: wrap;
+      justify-content: center;
       .game__item {
+        &:not(:last-child){
+              margin-right:50px;
+        }
+
         .game__img {
           width: 520px;
           min-height: 660px;

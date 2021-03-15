@@ -1,0 +1,313 @@
+@import "fonts.scss";
+@import "mixin_templates.scss";
+@import "header.scss";
+
+.list {
+  padding-top: 132px;
+
+  .content {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+
+    .list__title {
+      padding-top: 32px;
+
+      .list__title__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+      }
+    }
+
+    .list__left__side{
+
+      max-width: 960px;
+      width: 100%;
+     .list__top__panel{
+       margin-top: 45px;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+      margin-bottom: 14px;
+
+      .sorting{
+        display: flex;
+        align-items: center;
+        .sorted__by{
+          margin-right: 22px;
+        }
+        .kind__of__sorting{
+
+          height: 35px;
+          border: none;
+          &:focus{
+            overflow: hidden;
+            outline: none;
+          }
+        }
+      }
+      .last__items{
+
+        display: flex;
+        .last__item{
+          cursor: pointer;
+          &:first-child{
+            margin-right: 25px;
+            color: #D02B2B;
+          }
+          color: #4C11F2;
+        }
+      }
+    }
+  }
+
+  .list__right__side{
+     margin-top: 168px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 20px;
+    .list__right__side__price{
+      width: 100%;
+      min-height: 200px;
+      background: #C2C8CD;
+      margin-bottom: 12px;
+      .price__selectors{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+
+
+        .right__side__select{
+          border: 2px solid black;
+          width: 230px;
+          height: 30px;
+          margin: 0 15px;
+          background: transparent;
+          overflow: hidden ;
+
+        }
+      }
+
+
+    }
+    .list__right__side__genres{
+      width: 100%;
+      min-height: 150px;
+      background: #C2C8CD;
+        margin-bottom: 12px;
+        .checkboxs{
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          margin-top: 15px;
+          .genre__checkbox{
+
+            width: 35%;
+            display: flex;
+            position: relative;
+            margin-bottom: 15px;
+            .checkbox{
+                cursor: pointer;
+              color:rgb(33, 32, 34);
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              border: 2px solid rgba(118, 101, 101, 0.58);
+            }
+            .checkbox__text{
+              margin-left: 25px;
+              font-family: Roboto;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 16px;
+
+            }
+          }
+        }
+    }
+    .list__right__side__tags{
+      width: 100%;
+      min-height: 260px;
+      background: #C2C8CD;
+        margin-bottom: 12px;
+      form{
+        display: flex;
+                  position: relative;
+      }
+        .tags__find{
+
+          border: 2px solid black;
+        width: 93%;
+          height: 27px;
+          background: transparent;
+          overflow: hidden ;
+          margin: 0 15px;
+          margin-top: 20px;
+          font-family: Roboto;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+
+        }
+      .find__img{
+        position: absolute;
+        margin-top: 24px;
+        right: 27px;
+      }
+    }
+    .list__right__side__gamemode{
+        margin-bottom: 12px;
+        width: 100%;
+        min-height: 230px;
+        background: #C2C8CD;
+    }
+
+  }
+  }
+}
+.game__item {
+  align-items: center;
+  max-width: 960px;
+  min-height: 80px;
+  width: 100%;
+  margin-bottom: 12px;
+  background: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+
+  .game__item_left {
+    display: flex;
+
+    .game__info {
+      margin: 10px 0;
+      margin-left: 1.3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .game__name {
+        @include game__name;
+        font-size: 1.4em;
+      }
+
+      .game__info__bottom {
+        display: flex;
+
+        .game__platform{
+          transform: scale(0.7);
+        }
+        .game__genres {
+          margin-left: 5px;
+          padding-top: 9px;
+          display: flex;
+
+          .game__genre {
+            @include game__genre;
+              font-size: 1.2em;
+              padding-right: 3px;
+          }
+        }
+      }
+    }
+
+    .game__img {
+      width: 12em;
+      min-height: 85px;
+      background-position: center;
+      background-size: 100% 100%;
+      margin: 10px 0;
+        margin-left: 1.5em;
+
+    }
+  }
+
+  .game__item_right {
+    margin-left: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  max-width: 190px;
+  width: 100%;
+  justify-content: space-between;
+    .game__price__block {
+      margin-right: 4px;
+      display: flex;
+      align-items: center;
+      @include game__price;
+
+      .currency {
+        height: 23px;
+      }
+    }
+  }
+  .game_discount {
+
+    width: 67px;
+    height: 27px;
+    background: #07520A;
+    font-family: Saira;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.hidden__games4 {
+  display: none;
+}
+.show__more4 {
+  font-family: Saira;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+
+  &:after {
+    content: "▼";
+    font-size: 15px;
+  }
+}
+
+.activee4:after {
+  content: "▲";
+  font-size: 15px;
+}
+.ddd4 {
+  display: block;
+}
+.filter__title{
+  @include filter__title;
+  text-align: center;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+* {
+  padding: 0;
+  margin: 0
+}
