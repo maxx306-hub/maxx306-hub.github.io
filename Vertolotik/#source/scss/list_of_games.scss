@@ -5,10 +5,11 @@
   .content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     .left__side {
-      max-width: 950px;
+      max-width: 840px;
       width: 100%;
+
       .left__side__top {
         display: flex;
         margin-top: 35px;
@@ -131,6 +132,7 @@
     }
 
     .right__side {
+
       .game__item {
         .game__img {
           width: 225px;
@@ -186,7 +188,7 @@
           }
         }
       }
-      max-width: 755px;
+      max-width: 665px;
       width: 100%;
 
       .right__side__top {

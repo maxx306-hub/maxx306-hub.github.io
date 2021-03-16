@@ -17,14 +17,13 @@
   .header__content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between!important;
     .header__left {
       display: flex;
       text-align: center;
     .header__logo{
       img{
         filter: drop-shadow(0px 4px 20px #F80808);
-        padding-top: 5px;
         margin-left: 35px;
       }
     }

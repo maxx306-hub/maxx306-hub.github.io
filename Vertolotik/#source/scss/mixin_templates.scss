@@ -2,7 +2,7 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 42px;
   color: #000000;
   text-decoration: none;
@@ -20,7 +20,7 @@
 }
 @mixin game__name {
   font-family: Saira;
-font-size:32px;
+font-size:30px;
 font-style: normal;
 font-weight: 500;
 line-height: 38px;
@@ -63,4 +63,21 @@ color: #000000;
   letter-spacing: 0em;
   text-align: left;
   padding-top: 23px;
+}
+@mixin reason__title {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+@mixin reason__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 21px;
+
+  color: rgba(0, 0, 0, 0.7);
 }
